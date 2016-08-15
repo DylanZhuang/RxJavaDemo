@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">RxJava</string>
+    <string name="main_menu_item1">menu1</string>
+    <string name="main_menu_item2">menu2</string>
+    <string name="main_menu_item3">menu3</string>
+    <string name="main_tab_create">创建</string>
+    <string name="main_tab_transform">变换</string>
+    <string name="main_tab_filter">过滤</string>
+    <string name="main_tab_combine">结合</string>
+    <string name="main_tab_error">错误</string>
+    <string name="main_tab_utility">通用</string>
+    <string name="main_tab_condition_boolean">条件和布尔</string>
+    <string name="main_tab_aggregate">聚合</string>
+    <string name="main_tab_connectable">连接</string>
+
+    <string name="create_item_create">Create</string>
+    <string name="create_item_range">Range</string>
+    <string name="create_item_defer">Defer</string>
+    <string name="create_item_just">Just</string>
+    <string name="create_item_from">From</string>
+    <string name="create_item_interval">Interval</string>
+    <string name="create_item_repeat">Repeat</string>
+    <string name="create_item_timer">Timer</string>
+
+    <string name="transform_item_buffer">Buffer</string>
+    <string name="transform_item_flatmap">Flatmap</string>
+    <string name="transform_item_flatmap_iterable">FlatmapIterable</string>
+    <string name="transform_item_concat_map">ConcatMap</string>
+    <string name="transform_item_switch_map">SwitchMap</string>
+    <string name="transform_item_groupby">GroupBy</string>
+    <string name="transform_item_map">Map</string>
+    <string name="transform_item_cast">Cast</string>
+    <string name="transform_item_scan">Scan</string>
+    <string name="transform_item_window">Window</string>
+
+    <string name="filter_item_debounce">Debounce</string>
+    <string name="filter_item_distinct">Distinct</string>
+    <string name="filter_item_element_at">ElementAt</string>
+    <string name="filter_item_element_at_or_default">ElementAtOrDefault</string>
+    <string name="filter_item_filter">Filter</string>
+    <string name="filter_item_first">First</string>
+    <string name="filter_item_last">Last</string>
+    <string name="filter_item_skip">Skip</string>
+    <string name="filter_item_take">Take</string>
+    <string name="filter_item_sample">Sample</string>
+    <string name="filter_item_throttle_first">ThrottleFirst</string>
+    <string name="filter_item_distinct_util_changed">DistinctUtilChanged</string>
+    <string name="filter_item_of_type">OfType</string>
+
+    <string name="combine_item_combine_latest">CombineLatest</string>
+    <string name="combine_item_join">Join</string>
+    <string name="combine_item_merge">Merge</string>
+    <string name="combine_item_start_with">StartWith</string>
+    <string name="combine_item_switch">Switch</string>
+    <string name="combine_item_zip">Zip</string>
+    <string name="combine_item_merge_delay_error">MergeDelayError</string>
+
+    <string name="error_item_on_error_return">OnErrorReturn</string>
+    <string name="error_item_on_error_resume_next">OnErrorResumeNext</string>
+    <string name="error_item_on_exception_resume_next">OnExceptionResumeNext</string>
+    <string name="error_item_retry">Retry</string>
+    <string name="error_item_retry_when">RetryWhen</string>
+
+    <string name="utility_item_delay">Delay</string>
+    <string name="utility_item_materialize">Materialize</string>
+    <string name="utility_item_dematerialize">Dematerialize</string>
+    <string name="utility_item_subscrib_on">SubscribOn</string>
+    <string name="utility_item_observer_on">ObserverOn</string>
+    <string name="utility_item_time_interval">TimeInterval</string>
+    <string name="utility_item_timestamp">Timestamp</string>
+    <string name="utility_item_timeout">Timeout</string>
+    <string name="utility_item_using">Using</string>
+    <string name="utility_item_delay_subscription">DelaySubscription</string>
+    <string name="utility_item_do_on_each">DoOnEach</string>
+    <string name="utility_item_do_on_next">DoOnNext</string>
+    <string name="utility_item_do_on_subscribe">DoOnSubscribe</string>
+    <string name="utility_item_do_on_unsubscribe">DoOnUnSubscribe</string>
+    <string name="utility_item_do_on_completed">DoOnCompleted</string>
+    <string name="utility_item_do_on_error">DoOnError</string>
+    <string name="utility_item_do_on_terminate">DoOnTerminate</string>
+    <string name="utility_item_finally_do">FinallyDo</string>
+
+    <string name="condition_boolean_item_all">All</string>
+    <string name="condition_boolean_item_amb">Amb</string>
+    <string name="condition_boolean_item_contains">Contains</string>
+    <string name="condition_boolean_item_is_empty">IsEmpty</string>
+    <string name="condition_boolean_item_default_empty">DefaultIfEmpty</string>
+    <string name="condition_boolean_item_sequence_equal">SequenceEqual</string>
+    <string name="condition_boolean_item_skip_until">SkipUntil</string>
+    <string name="condition_boolean_item_skip_while">SkipWhile</string>
+    <string name="condition_boolean_item_take_until">TakeUntil</string>
+    <string name="condition_boolean_item_take_while">TakeWhile</string>
+
+    <string name="aggregate_item_concat">Concat</string>
+    <string name="aggregate_item_reduce">Reduce</string>
+    <string name="aggregate_item_count">Count</string>
+    <string name="aggregate_item_collect">Collect</string>
+
+    <string name="connect_item_connect">Connect</string>
+    <string name="connect_item_ref_count">RefCount</string>
+    <string name="connect_item_replay">Replay</string>
+
+    <string name="demo_text_run">run</string>
+    <string name="demo_text_cancel">cancel</string>
+
+    <string name="create_item_create_introduce">Create是最基本的Creating Observables操作符，使用Create操作符创建
+        一个Observables，在合适的时机调用Subscriber的onNext/onComplete/onError方法。需要注意的是Observables有且只能
+        调用onComplete/onError一次，并且一旦调用，其它方法将不再执行。Subscriber的onNext方法是将处理好的数据发送给Subscriber；
+        onComplete方法是告知Subscriber需要发送的数据已发送完毕；onError方法是在发送数据的过程中，产生了错误，发送一个Throwable
+        对象给Subscriber。
+    </string>
+    <string name="create_item_range_introduce">Range是一个发射特定整数序列的Observable的操作符，Range操作符根据出初始值
+        n和m发射一系列大于等于n的m个值。
+    </string>
+    <string name="create_item_defer_introduce">Defer操作符只有在Subscriber被订阅时，才会创建一个新的Observables,
+        也就是说，Defer操作符能够保证每次发射的数据都是最新的。
+    </string>
+    <string name="create_item_just_introduce">Just操作符是将某个对象转换为Observable，并将这个Observable发射出去，
+        其中某个对象可为数字、字符串、数组、Iterate对象。并且每次发射的Observable是最初创建的Observable。
+    </string>
+    <string name="create_item_from_introduce">From操作符是将某个对象转换为Observable，并将对象的数据挨个发射出去，
+        其中某个对象可为Future、Iterable和数组。跟Just操作符比较类似，只是Just操作符是一次性把数据发射出去，而From操作
+        符是挨个将对象里的数据发射出去，例如含有5个字符串的数组，使用Just的操作符会一次性将数组发射出去，使用From操作符会发
+        射5次，每次下发一个字符串。
+    </string>
+    <string name="create_item_interval_introduce">Interval操作符类似与一个从零开始的计时器，每隔一个固定的时间，发
+        射一个整型的数据出来，需要注意的是Interval操作符是运行在computation Scheduler,如果需要在view中显示发射出来的结
+        果，要在主线程中订阅，调用observeOn(AndroidSchedulers.mainThread())。
+    </string>
+    <string name="create_item_repeat_introduce">Repeat操作符是将一个Observable重复发送n次，n是传入repeat的参数。</string>
+    <string name="create_item_timer_introduce">Timer操作符类似于一个倒计时装置，等倒计时完成之后，发射一个数字0。</string>
+
+    <string name="transform_item_buffer_introduce1">Buffer操作符是将要发送的数据按照固定的大小进行新的封装，然后将这些封装
+        好的数据在发射出去，发射出去的数据不是一个单独的数据，而是一个集成。
+    </string>
+    <string name="transform_item_buffer_introduce2">Buffer操作符是将要发送的数据按照固定的大小进行新的封装，然后将这些封装
+        好的数据在发射出去，发射出去的数据不是一个单独的数据，而是一个集成。其中的skip参数代表每发射一次数据，就跳过skip数据之后，进行
+        新的数据封装，然后发射数据。
+    </string>
+    <string name="transform_item_flap_map_introduce">FlatMap操作符是将从Observable发射出的数据，按照一定的规则重新封装
+        为一个新的Observable在发射出去。需要注意的是最后发射出去的数据有可能是交错的。
+    </string>
+    <string name="transform_item_flap_map_iterable_introduce">FlatMapIterable操作符基本是与FlatMap操作符一样，不同的地方
+        是新的Observable发射出去的数据是以iterable作为数据源。
+    </string>
+    <string name="transform_item_concat_map_introduce">ConcatMap操作符基本是与FlatMap操作符一样，不同的地方是新的
+        Observable发射出去的出去的顺序不变。
+    </string>
+    <string name="transform_item_switch_map_introduce">SwitchMap操作符基本是与FlatMap操作符一样，不同的地方是当原始
+        Observable发射一个新的数据（Observable）时，它将取消订阅并停止监视产生执之前那个数据的Observable，只监视当前这一个。
+    </string>
+    <string name="transform_item_group_by_introduce">GroupBy操作符是将原Observable发射的数据，并通过一定规则生成的key，
+        按照相同的key将发射出去的数据包含在一个小的Observable里，然后将这些小的Observable里的数据发射出去。该操作符类似于数据库
+        里的groupBy字段。
+    </string>
+    <string name="transform_item_map_introduce">Map操作符与FlatMap操作符比较类似，不同的是Map操作符对数据的变换是直接进行
+        的，不用重新生成新的Observable。
+    </string>
+    <string name="transform_item_cast_introduce">Cast操作符将Observable发射的数据强制转化为另外一种类型。</string>
+    <string name="transform_item_scan_introduce">Scan操作符操作符对原始Observable发射的第一项数据应用一个函数，
+        然后将那个函数的结果作为自己的第一项数据发射。它将函数的结果同第二项数据一起填充给这个函数来产生它自己的第二项数据。
+        它持续进行这个过程来产生剩余的数据序列。类似于迭代操作。
+    </string>
+    <string name="transform_item_window_introduce">Window操作符类似于Buffer操作符，不同的是Window操作符每次发射
+        出去的是Observable，而Buffer操作符发射出去的是一项数据。
+    </string>
+    <string name="fliter_item_debouce_introduce">Debouce操作符可以通过时间进行过滤，也可以通过函数进行过滤。通过
+        时间进行过滤时，Observable每次发射一个数据出去时，都会进行记时，如果在规定的时间内，Observable发射出一个新的数据，那么
+        老的数据将会被丢弃，如果发射的时机一直都是这样，那么最后只能成功发射出去最后一个数据。通过函数进行过滤时，会生成一个新的
+        Observable，如果此时原Observable发射一个新数据，而此时上一次的Observable还没操作完成，则上一次的Observable将会被丢弃。
+    </string>
+    <string name="filter_item_distinct_introduce">Distinct操作符进行数据出重的操作。</string>
+    <string name="filter_item_distinct_util_changed_introduce">DistinctUtilChanged操作符对连续的数据进行出重的操作。</string>
+    <string name="filter_item_element_at_introduce">ElementAt操作符获取原始Observable发射的数据序列指定索引位置的数据项，
+        然后当做自己的唯一数据发射。
+    </string>
+    <string name="filter_item_element_at_or_default_introduce">ElementAtOrDefault操作符当索引位置不超过Observable
+        发射的数据序列的大小时，功能跟ElementAt操作符一样，当超过时会以一个默认值返回。如果索引位置为负数，将会抛出数组越界的异常。
+    </string>
+    <string name="filter_item_filter_introduce">Filter操作符是传入一个函数，当发射出去的数据满足该函数的条件时，才被Filter
+        操作符发射出去，如果不满足数据将会被过滤。
+    </string>
+    <string name="filter_item_first_introduce">First操作符是返回第一条满足条件的数据。</string>
+    <string name="filter_item_last_introduce">Last操作符是返回最后一条满足条件的数据。</string>
+    <string name="filter_item_skip_introduce">Skip操作符是过滤调前m项数据。假设要发射数据的列表是n，而skip传入的参数是m，
+        则Skip操作符只会发射[n-m, n]这个区间的数据。TakeLast操作符只取后面的m项数据，如果传入的数据是TakeLast(n-m)，则跟
+        Skip(m)发射出去的数据是一样的。
+    </string>
+    <string name="filter_item_take_introduce">Take操作符是只取前m项数据。假设要发射数据的列表是n，而take传入的参数是m，
+        则Take操作符只会发射[1, m]这个区间的数据。SkipLast操作符只取前面的m项数据，如果传入的数据是SkipLast(n-m)，则跟
+        Take(m)发射出去的数据是一样的。
+    </string>
+    <string name="filter_item_of_type_introduce">OfType操作符传入class，只返回属于该class类型的数据。</string>
+    <string name="filter_item_sample_introduce">Sample操作符在每个采样周期内，它总是发射原始Observable的最近发射的数据。</string>
+    <string name="filter_item_throttle_first_introduce">ThrottleFirst操作符在每个采样周期内，它总是发射原始Observable的第一个数据。</string>
+
+    <string name="combine_item_combine_latest_introduce">CombineLatest操作符可以将2-9个Observable的数据组装起来然后在发射出去。
+        2-9个Observable中的任何一个Observable发射出去的数据，都会和其它每个Observable发射出去的最近的数据，按照一定的函数规则进行组装，
+        最后发射出去的是由这个函数组装完成的结果。
+    </string>
+    <string name="combine_item_join_introduce">Join操作符是组合两个Observable数据的，每个Observable都有一个时间区域，
+        只有在这段时间区域内发射出去的数据才能被一定的函数规则组合起来，在发射出去。
+    </string>
+    <string name="combine_item_merge_introduce">Merge操作符是将2-9个Observable组合起来，在发射出去，就像一个Observable发射
+        数据一样，但是发射出去的数据可能是交错存在的。如果在合并的过程中抛出了一个onError，则数据发射就会结束，并将这个数据异常抛出来。
+    </string>
+    <string name="combine_item_merge_delay_error_introduce">MergeDelayError操作符跟Merge操作符基本上一样，只是在处理
+        异常的时候有区别，MergeDelayError操作符会把异常在最后抛出,不会终止其它数据的合并。
+    </string>
+    <string name="combine_item_start_with_introduce">StartWith操作符是在原Observable的的前面插入数据，这些数据可为Iterable、
+        Observable。
+    </string>
+    <string name="combine_item_zip_introduce">Zip操作符是将2-9个Observable的数据按照顺序组合起来，并且每个数据只能组合一次。
+        最后Zip操作符发射出去数据的个数由2-9个Observable中最少的个数决定。
+    </string>
+    <string name="combine_item_switch_introduce">Switch操作符的api是switchOnNext，该操作符会发射一些列小的Observable，
+        如果一个Observable发射出去的数据被其它Observable发射出去的数据覆盖掉了，则Switch操作符会丢弃掉被覆盖的数据，会将新的数据
+        发射出去。
+    </string>
+    <string name="error_item_on_error_return_introduce">OnErrorReturn操作符是当遇到异常发生时，让Observable发射一个事先
+        预定好的数据出去。
+    </string>
+    <string name="error_item_on_error_resume_next_introduce">OnErrorResumeNext操作符是当遇到异常发生时，发射下一个Observable
+        里的数据。
+    </string>
+    <string name="error_item_on_exception_resume_next_introduce">OnExceptionResumeNext操作符跟onErrorResumeNext操作符类型，
+        只是OnExceptionResumeNext操作符区分了抛出异常的类型，如果是以exception抛出的，则表现形式跟onErrorResumeNext操作符一致，如果
+        是以throwable抛出的，则会将这个错误发射出去。
+    </string>
+    <string name="error_item_retry_introduce">Retry操作符是当Observable遇到异常时，会对Observable进行重新的订阅，直到它正常为止。
+        当传入参数时，这个参数代表Observable发生错误时，将被订阅的次数，如果次数超了，Observable将不会被订阅，最后抛出一个最新的error。
+    </string>
+    <string name="error_item_retry_when_introduce">RetryWhen操作符当遇到异常时，retryWhen将onError中的Throwable传递给一个函数，
+        这个函数产生另一个Observable，retryWhen观察它的结果再决定是不是要重新订阅原始的Observable。如果这个Observable发射了一项数据，
+        它就重新订阅，如果这个Observable发射的是onError通知，它就将这个通知传递给观察者然后终止。
+    </string>
+    <string name="utility_item_delay_introduce">Delay操作符是延时数据的发射。</string>
+    <string name="utility_item_delay_subscription_introduce">DelaySubscription操作符是延时订阅Observable。</string>
+    <string name="utility_item_do_on_each_introduce">DoOnEach操作符为Observable设置一个回调，每当Observable发射数据时，都会触发
+        这个回调，类似于观察者模式。
+    </string>
+    <string name="utility_item_do_on_next_introduce">doOnNext操作符类似于doOnEach(Action1)，但是它的Action不是接受一个
+        Notification参数，而是接受发射的数据项。
+    </string>
+    <string name="utility_item_do_on_subscribe_introduce">doOnSubscribe操作符注册一个动作，当观察者订阅它生成的
+        Observable它就会被调用。
+    </string>
+    <string name="utility_item_do_on_unsubscribe_introduce">doOnUnsubscribe操作符注册一个动作，当观察者取消订阅
+        它生成的Observable它就会被调用。
+    </string>
+    <string name="utility_item_do_on_completed_introduce">doOnCompleted操作符注册一个动作，当它产生的Observable
+        正常终止调用onCompleted时会被调用。
+    </string>
+    <string name="utility_item_do_on_error_introduce">doOnError操作符注册一个动作，当它产生的Observable异常终止调用
+        onError时会被调用。
+    </string>
+    <string name="utility_item_do_on_terminate_introduce">doOnTerminate操作符注册一个动作，当它产生的Observable
+        终止之前会被调用，无论是正常还是异常终止。
+    </string>
+    <string name="utility_item_finally_do_introduce">finallyDo操作符注册一个动作，当它产生的Observable终止之后会
+        被调用，无论是正常还是异常终止。
+    </string>
+    <string name="utility_item_materialize_introduce">Meterialize操作符将OnNext/OnError/OnComplete都转化为一个
+        Notification对象并按照原来的顺序发射出来。
+    </string>
+    <string name="utility_item_dematerialize_introduce">Demeterialize操作符跟Meterialize操作符正好相反。</string>
+    <string name="utility_item_observer_on_introduce">ObserverOn操作符用来决定观察者运行在哪个线程上。</string>
+    <string name="utility_item_subscrib_on_introduce">SubscribOn操作符用来决定Observable在哪个线程上运行。</string>
+    <string name="utility_item_time_interval_introduce">TimeInterval操作符拦截原始Observable发射的数据项，替换为发
+        射表示相邻发射物时间间隔。
+    </string>
+    <string name="utility_item_time_stamp_introduce">TimeStamp操作符会对数据封装为Timestamped对象，该对象包含发射出去
+        的数据和发射该数据时的时间戳。
+    </string>
+    <string name="utility_item_time_out_introduce">TimeOut操作符是如果Observable是timeout指定的时间内，没发射出数据，
+        timeout则会终止这次Observable的发射，并自己发射一个数据；反之发射Observable的数据。
+    </string>
+    <string name="utility_item_using_introduce">Using操作符是创建一个资源，让Observable引用这个资源，在Observable
+        用完之后对资源进行回收。
+    </string>
+    <string name="condition_item_all_introduce">All操作符对Observable发送的所有数据根据某个条件进行判断，当其发射出去的
+        数据都满足该条件时，则返回true，否则返回false。
+    </string>
+    <string name="condition_item_amb_introduce">Amb操作符是对2到9个Observable进行处理，这些Observable会形成一种竞争关系，
+        当哪个Observable最先发射出数据，则amb进行发射这个Observable里的数据，而其它的Observable将被丢弃。
+    </string>
+    <string name="condition_item_contains_introduce">Contains操作符判断Observable发射出去的数据是否包含某个数据，如果包含
+        则返回true，如果Observable数据发射完了还没找到该数据，则返回false。
+    </string>
+    <string name="condition_item_default_if_empty_introduce">DefaultIfEmpty操作符会判断Observable是否有发射过数据，如果
+        有，则返回发射出去的数据；如果没有，则发射自己定义好的数据。
+    </string>
+    <string name="condition_item_is_empty_introduce">IsEmpty操作符会判断Observable是否有发射过数据，如果有，则返回false；
+        如果没有，则返回true。
+    </string>
+    <string name="condition_item_sequence_equal_introduce">SequenceEqual操作符比较两个Observable是否相同，如果相同则返回
+        true；如果不相同则返回false。
+    </string>
+    <string name="condition_item_skip_until_introduce">SkipUtil操作符是根据一个目标Observable为基准，当目标Observable
+        没发射出去数据的时，原Observable发射出去的数据将会被忽略，当目标Observable发射数据时，则原Observable才开始发射数据。
+    </string>
+    <string name="condition_item_skip_while_introduce">SkipWhile操作符会根据定义的函数逻辑来判断是否跳过数据，当函数返回true
+        时，则跳过数据，返回数据为false时，则发射数据。
+    </string>
+    <string name="condition_item_take_until_introduce">TakeUtil操作符是根据一个目标Observable为基准，当目标Observable
+        没发射出去数据的时，原Observable发射出去的数据将会发射，当目标Observable发射数据时，则原Observable的数据将被丢弃。
+    </string>
+    <string name="condition_item_take_while_introduce">TakeWhile操作符会根据定义的函数逻辑来判断是否跳过数据，当函数返回true
+        时，则发射数据，返回数据为false时，则丢弃数据。
+    </string>
+    <string name="aggreate_item_collect_introcude">Collect操作符将Observable要发射的数据，存放到一个数据结构里，
+        在将这个数据结构发射出去。
+    </string>
+    <string name="aggreate_item_concat_introduce">Concat操作符将2到9个Observable，按照顺序将他们合并为一个Observable
+        发射出去。
+    </string>
+    <string name="aggreate_item_count_introduce">Count操作符是统计Observable一共发射数据的个数。</string>
+    <string name="aggreate_item_reduce_introduce">Reduce操作符对原始Observable发射数据的第一项应用一个函数，然后再将这个
+        函数的返回值与第二项数据一起传递给函数，以此类推，持续这个过程知道原始Observable发射它的最后一项数据并终止，此时Reduce返回
+        的Observable发射这个函数返回的最终值。
+    </string>
+    <string name="connect_item_connect_introduce">Publish操作符将原有的Observable转化为ConnectableObservable，
+        ConnectableObservable在被订阅的时候不会发射数据，而是在调用Connect操作符时才发射数据。Connect操作符会生成Subscription
+        对象，如果想终止数据的发射，调用unsubscribe即可。如果一个Observable没有订阅着订阅它，可以使用Connect操作符让Observable
+        发射数据。
+    </string>
+    <string name="connect_item_ref_count_introduce">RefCount操作符是将一个ConnectableObservable转换为一个普通的
+        Observable，并通过订阅者的订阅，将数据发送出去。
+    </string>
+    <string name="connect_item_replay_introduce">Replay操作符返回一个ConnectableObservable对象并且可以缓存其发射过的数据，
+        这样即使有订阅者在其发射数据之后进行订阅也能收到其之前发射过的数据。不过使用Replay操作符我们最好还是限定其缓存的大小，否则缓存的
+        数据太多了可会占用很大的一块内存。对缓存的控制可以从空间和时间两个方面来实现。
+    </string>
+</resources>

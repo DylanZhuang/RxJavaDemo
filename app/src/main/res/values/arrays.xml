@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="main_tab_array">
+        <item>@string/main_tab_create</item>
+        <item>@string/main_tab_transform</item>
+        <item>@string/main_tab_filter</item>
+        <item>@string/main_tab_combine</item>
+        <item>@string/main_tab_error</item>
+        <item>@string/main_tab_utility</item>
+        <item>@string/main_tab_condition_boolean</item>
+        <item>@string/main_tab_aggregate</item>
+        <item>@string/main_tab_connectable</item>
+    </array>
+</resources>
